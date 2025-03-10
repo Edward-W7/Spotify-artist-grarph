@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify Artist Network Visualization</title>
+  <!-- Include CSS stylesheets -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .link {
+      stroke: #999;
+      stroke-opacity: 0.6;
+    }
+
+    .node circle {
+      stroke: #fff;
+      stroke-width: 1.5px;
+    }
+
+    .node text {
+      pointer-events: none;
+      font-size: 10px;
+    }
+
+    /* Tooltip styling */
+    #tooltip {
+      position: absolute;
+      text-align: center;
+      padding: 5px;
+      font: 12px sans-serif;
+      background: lightgray;
+      border: 0px;
+      border-radius: 8px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- SVG canvas where D3 will render the graph -->
+  <svg width="5000" height="3000"></svg>
+
+  <!-- Include D3.js library -->
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+<script type="module" src="GraphVisualization.js"></script>
+
+</body>
+</html>
